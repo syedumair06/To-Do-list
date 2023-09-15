@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container1">
+    <div class="head">
+      <div class="box">
+        <a href="/homework" class="homework" id="homework">
+          <svg
+            class="cal"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-calendar-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+            />
+          </svg>
+          Home Work
+        </a>
+  
+        <div class="cenline"></div>
+        <a href="/officework" class="officework" style="background-color: black;">
+          <svg
+            class="bri"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-briefcase"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+            />
+          </svg>
+          Office Work
+        </a>
+      </div>
+
+
+<div class="body">
+    <!-- To do list items -->
+
+    <% for (let i = data2.length-1; i >=0; i--) {%>
+        <div class="item">
+        <input type="checkbox" name="completed" class="checkbox" id="checkbox"/>
+        <p class="text" id="text"><%=data2[i]%></p>
+      </div>
+    <% } %>
+
+  </div>
+  <form id="form" action="/submit" method="post">
+    <input type="text" name="newItem2" placeholder="    New Item !" class="form1"/>
+    <button type="submit" name="add" value="Work" class="form2">
+      <svg
+        class="plus"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="bi bi-plus-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+        />
+      </svg>
+    </button>
+  </form>
+</div>
+</div>
+<%- include("partials/footer.ejs") %>

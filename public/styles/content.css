@@ -1,0 +1,288 @@
+body {
+    font-family: "Braah One", sans-serif;
+    background: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+    margin-top: 20px;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid black;
+    color: #6457ff;
+    text-shadow: rgba(0, 0, 0, 0.20) 2px 2px 2px;
+}
+
+.date1
+{
+    font-size: 200px;
+    color: #6557ffb1;
+    /* text-shadow: rgba(0, 0, 0, 0.40) 2px 2px 2px; */
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    user-select: none;
+    letter-spacing: 62px;
+    z-index: -1;
+}
+
+.container1 {
+    max-width: 30vw;
+    margin: 100px auto;
+    margin-top: 3rem;
+}
+
+.head
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #6457ff;
+    font-size: 24px;
+    height: 4rem;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 0.1px solid rgb(0, 0, 0);
+    font-family: monospace;
+    overflow: hidden;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.homework {
+    border-radius: 15px 0 0 0;
+    padding: 14px 64px 14px 64px;
+    text-decoration: none;
+    color: white;
+}
+
+.officework {
+    text-decoration: none;
+    border-radius: 0 15px 0 0;
+    padding: 13px 60px 14px 60px;
+    color: white;
+}
+
+.item {
+    display: flex;
+    background-color: white;
+    height: 4rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    border-bottom: 0.1px solid rgb(216, 216, 216);
+    font-size: 20px;
+    font-weight: unset;
+    font-family: cursive;
+    color: #4f4bff;
+}
+
+.cenline {
+    border-right: 1px solid rgb(2, 2, 2);
+    height: 4rem;
+}
+
+#form {
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    background-color: white;
+    height: 4rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    border-bottom: 0.1px solid rgb(216, 216, 216);
+    font-size: 1.5rem;
+    font-weight: unset;
+    font-family: cursive;
+}
+
+.form1 {
+    height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 3px ;
+    width: 70vw;
+    border: 0.1px solid rgb(159 155 155);
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: blue;
+}
+
+.form2 {
+    background: none;
+    border: none;
+
+    .plus {
+        width: 50px;
+        color: black;
+        border-radius: 25px;
+        box-shadow: rgb(54 54 54) 4px 3px 4px;
+    }
+
+    .plus:hover {
+        color: rgba(4, 4, 4, 0.8);
+    }
+}
+
+.cal,
+.bri {
+    width: 20px;
+}
+
+.homework:hover,
+.officework:hover {
+    background: #a1a1a1;
+    border: none;
+}
+
+footer {
+    border-top: 1px solid black;
+    /* margin-top: 109px; */
+    padding: 1.4rem;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+.container {
+    justify-content: center;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+.date {
+    font-size: 1rem;
+    color: #6457ff;
+    text-align: center;
+    margin: 0;
+}
+
+.nav {
+    justify-content: flex-end !important;
+    gap: 20px;
+}
+
+.bi
+{
+    color: black;
+}
+
+.body {
+    background-color: white;
+    height: 30rem;
+    border-bottom: 0.1px solid rgb(216, 216, 216);
+    overflow-y: scroll;
+}
+.checkbox
+{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.text
+{
+    margin: 24px 0;
+}
+
+.quote
+{
+    text-align: center;
+    color: #6457ff;
+    letter-spacing: 14px;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.index-head
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    background: #6457ff;
+    width: 40vw;
+    margin: 120px auto;
+    height: 40vh;
+    border-radius: 10px;
+    color: white;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.b-contain
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+}
+
+.index-title
+{
+    text-align: center;
+    margin: auto auto;
+    color: #f0f8ff;
+    letter-spacing: 7px;
+    word-spacing: 18px;
+    line-height: 1.5;
+}
+
+.home,.work
+{
+    background: aliceblue;
+    border: none;
+    padding: 20px 30px;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #6457ff;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home:hover,.work:hover
+{
+    background-color: #2e2d2d;
+    color: aliceblue;
+}
+
+.png
+{
+    height: 450px;
+    position: absolute;
+    top: 330px;
+    left: 15px;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    transition: all;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#checkbox:checked + #text
+{
+    text-decoration:black line-through;
+    opacity: 0.5;
+}
